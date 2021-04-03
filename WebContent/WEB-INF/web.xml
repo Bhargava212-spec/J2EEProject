@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>J2EEProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>FirstServlet</servlet-name>
+  <servlet-class>com.day1.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FirstServlet</servlet-name>
+  <url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>SecondServlet</servlet-name>
+  <servlet-class>com.pack.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SecondServlet</servlet-name>
+  <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>FourthServlet</servlet-name>
+  <servlet-class>com.pack.FourthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FourthServlet</servlet-name>
+  <url-pattern>/FourthServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>EleventhServlet</servlet-name>
+  <servlet-class>com.pack.EleventhServlet</servlet-class>
+  <init-param>
+      <param-name>city</param-name>
+      <param-value>chennai</param-value>
+  </init-param>
+  <init-param>
+      <param-name>state</param-name>
+      <param-value>tamil nadu</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EleventhServlet</servlet-name>
+  <url-pattern>/EleventhServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>SixthServlet</servlet-name>
+  <servlet-class>com.pack.SixthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SixthServlet</servlet-name>
+  <url-pattern>/SixthServlet</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <servlet>
+  <servlet-name>NinthServlet</servlet-name>
+  <servlet-class>com.pack.NinthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>NinthServlet</servlet-name>
+  <url-pattern>/NinthServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>ThirteenthServlet</servlet-name>
+  <servlet-class>com.pack.ThirteenthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ThirteenthServlet</servlet-name>
+  <url-pattern>/ThirteenthServlet</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>email</param-name>
+      <param-value>abc.com</param-value>
+  </context-param>
+  	  <context-param>
+		
+		  <param-name>website</param-name>
+		
+		  <param-value>javat.com</param-value>
+	
+	</context-param>
+	
+	 <servlet>
+  <servlet-name>SixteenthServlet</servlet-name>
+  <servlet-class>com.pack.SixteenthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SixteenthServlet</servlet-name>
+  <url-pattern>/SixteenthServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>EighteenthServlet</servlet-name>
+  <servlet-class>com.pack.EighteenthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EighteenthServlet</servlet-name>
+  <url-pattern>/EighteenthServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  <filter-name>ExampleFilter</filter-name>
+  <filter-class>com.pack.ExampleFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>ExampleFilter</filter-name>
+  <url-pattern>/EighteenthServlet</url-pattern>
+  </filter-mapping>
+  
+  <listener>
+  <listener-class>com.pack.MyServletContextListner</listener-class>
+  </listener>
+   <context-param>
+   <param-name>mySubject</param-name>
+   <param-value>English</param-value>
+   </context-param>
+   
+   
+  
+  
+</web-app>
